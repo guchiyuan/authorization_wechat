@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="full-screen" content="yes">
+    <title>新增申请信息</title>
+    <link rel='stylesheet' href='/sqxttestwx/sq/lib/layui/css/layui.css' />
+    <link rel="stylesheet" href="/sqxttestwx/sq/lib/font-awesome/css/font-awesome.min.css" />
+    <link rel='stylesheet' href='/sqxttestwx/sq/lib/EasyUI/easyui.css' />
+    <link rel='stylesheet' href='/sqxttestwx/sq/lib/mobileSelect/css/public.css' />
+    <link rel='stylesheet' href='/sqxttestwx/sq/lib/mobileSelect/css/mobileSelect.css' />
+    <link rel='stylesheet' href='/sqxttestwx/sq/stylesheets/common.css' />
+    <link rel='stylesheet' href='/sqxttestwx/sq/stylesheets/application.css' />
+
+    <!--<link rel='stylesheet' href='/sq/lib/timesSelect/css/FJL.css' />-->
+    <link rel='stylesheet' href='/sqxttestwx/sq/lib/timesSelect/css/FJL.picker.css' />
+</head>
+
+<body>
+    <!--<h1>-->
+    <!--<a href="/myApply"><i class="layui-icon back">&#xe603;</i></a>-->
+    <!--新增申请信息-->
+    <!--</h1>-->
+
+    <div class="layui-tab">
+        <div class="layui-form sq-user">
+            <div class="sq-box-shadow">
+                <div class="layui-form-item sq-message sq-jf-use">
+                    <label class="layui-form-label">甲方使用：</label>
+                    <div class="layui-input-block">
+                        <p id="jfUse">请选择是否为甲方使用</p>
+                    </div>
+                </div>
+                <!--授权信息-->
+                <div class="layui-form-item sq-message sq-auth-type">
+                    <label class="layui-form-label">授权类型：</label>
+                    <div class="layui-input-block">
+                        <p id="authType">请选择授权类型</p>
+                    </div>
+                    <!--<div class="layui-input-block">-->
+                    <!--<select name="interest" lay-filter="auth-type">-->
+                    <!--<option value="1">单机授权</option>-->
+                    <!--<option value="2">服务器授权</option>-->
+                    <!--</select>-->
+                    <!--</div>-->
+                </div>
+                <!--授权许可数-->
+                <!--选择服务器授权时显示-->
+                <div class="layui-form-item sq-message sq-license-num sq-hide">
+                    <label class="layui-form-label">授权许可数：</label>
+                    <div class="layui-input-block">
+                        <input type="number" name="" value="2" autocomplete="off" class="layui-input license-num">
+                        <button class="li-minus">-</button>
+                        <button class="li-plus">+</button>
+                        <i class="layui-icon tips"></i>
+                    </div>
+                </div>
+
+                <div class="layui-form-item sq-message layui-form sq-auth-product" lay-filter="authFilter">
+                    <label class="layui-form-label">授权产品：</label>
+                    <div class="layui-input-block ycontrol-Hide">
+                        <p id="authProduct">请选择授权产品</p>
+                    </div>
+                    <div class="layui-input-block ycontrol-Hide">
+                        <select lay-ignore id="moreAuthProduct" class="easyui-combotree" style="width: 100%; height: 36px;">
+                        </select>
+                    </div>
+
+
+                </div>
+
+                <div class="layui-form-item sq-message sq-encryption">
+                    <label class="layui-form-label">是否使用加密狗</label>
+                    <div class="layui-input-block">
+                        <input id="sq-true" type="radio" lay-filter="encryptionTrue" name="encryption" value="是" title="是">
+                        <input id="sq-false" type="radio" lay-filter="encryptionFalse" name="encryption" value="否"
+                            title="否" checked>
+
+                    </div>
+                </div>
+                <!--使用加密狗添加信息-->
+                <div class="encryption-dog">
+                    <div class="layui-form-item sq-message sq-recipients ">
+                        <label class="layui-form-label">收件人</label>
+                        <div class="layui-input-block">
+                            <!--<select name="recipients" id="recipients"  lay-filter="recipients">-->
+                            <!--&lt;!&ndash;<option value="">其他</option>-->
+
+                            <!--</select>-->
+                            <p id="recipients">其他</p>
+
+                            <span class="textbox-addon textbox-addon-right">
+                                <a href="javascript:;" class="textbox-icon combo-arrow" icon-index="0" tabindex="-1"></a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="recipients-div">
+                        <div class="layui-form-item sq-message sq-recipients-name ">
+                            <label class="layui-form-label">收件人姓名</label>
+                            <div class="layui-input-block">
+                                <input type="text" id="recipientsName" class="layui-input" placeholder="请输入收件人姓名">
+                            </div>
+                        </div>
+                        <div class="layui-form-item sq-message sq-recipients-phone ">
+                            <label class="layui-form-label">收件人联系电话</label>
+                            <div class="layui-input-block">
+                                <input type="text" id="recipientsPhone" class="layui-input" placeholder="请输入收件人联系电话">
+                            </div>
+                        </div>
+                        <div class="layui-form-item sq-message sq-recipients-address ">
+                            <label class="layui-form-label">收件人地址</label>
+                            <div class="layui-input-block">
+                                <input type="text" id="recipientsAddress" class="layui-input" placeholder="请输入收件人地址">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layui-form-item sq-message  sq-invoice-info ">
+                        <label class="layui-form-label">开票信息：</label>
+                        <div class="layui-input-block ">
+                            <p id="invoiceInfo">其他</p>
+                            <!--<select name="invoiceInfo" id="invoice-info"  lay-filter="invoiceInfo">-->
+                            <!--<option value="">其他</option>-->
+                            <!--</select>-->
+                            <span class="textbox-addon textbox-addon-right">
+                                <a href="javascript:;" class="textbox-icon combo-arrow" icon-index="0" tabindex="-1"></a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="invoice-div">
+                        <div class="layui-form-item sq-message sq-invoice-company">
+                            <label class="layui-form-label">公司名称</label>
+                            <div class="layui-input-block">
+                                <input type="text" id="invoiceCompany" class="layui-input" placeholder="请输入公司名称">
+                            </div>
+                        </div>
+                        <div class="layui-form-item sq-message sq-invoice-phone ">
+                            <label class="layui-form-label">公司电话</label>
+                            <div class="layui-input-block">
+                                <input type="text" id="invoicePhone" class="layui-input" placeholder="请输入公司电话">
+                            </div>
+                        </div>
+                        <div class="layui-form-item sq-message sq-invoice-addrress ">
+                            <label class="layui-form-label">公司地址</label>
+                            <div class="layui-input-block">
+                                <input type="text" id="invoiceAddress" class="layui-input" placeholder="请输入公司地址">
+                            </div>
+                        </div>
+                        <div class="layui-form-item sq-message sq-ratepaying-num">
+                            <label class="layui-form-label">纳税识别号</label>
+                            <div class="layui-input-block">
+                                <input type="text" id="ratepayingNum" class="layui-input" placeholder="请输入纳税识别号">
+                            </div>
+                        </div>
+                        <div class="layui-form-item sq-message sq-deposit-bank">
+                            <label class="layui-form-label">开户银行</label>
+                            <div class="layui-input-block">
+                                <input type="text" id="depositBank" class="layui-input" placeholder="请输入开户银行">
+                            </div>
+                        </div>
+                        <div class="layui-form-item sq-message sq-bank-count">
+                            <label class="layui-form-label">银行账号</label>
+                            <div class="layui-input-block">
+                                <input type="text" id="bankCount" class="layui-input" placeholder="请输入银行账号">
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <!--行政区代码：省-->
+                <div class="layui-form-item sq-message layui-form sq-auth-provence" lay-filter="provenceFilter">
+                    <label class="layui-form-label">行政区代码：</label>
+                    <div class="layui-input-block">
+                        <p id="provence">请选择省</p>
+                        <span class="textbox-addon textbox-addon-right">
+                            <a href="javascript:;" class="textbox-icon combo-arrow" icon-index="0" tabindex="-1"></a>
+                        </span>
+                    </div>
+                    <!--<div class="layui-input-block">-->
+                    <!--<select name="interest" lay-filter="provence">-->
+                    <!--&lt;!&ndash;<option value="0">XX软件管理</option>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<option value="1">XX软件管理</option>&ndash;&gt;-->
+                    <!--</select>-->
+                    <!--</div>-->
+                </div>
+
+                <div class="layui-form-item sq-message layui-form sq-city-dm" lay-filter="cityFilter">
+                    <label class="layui-form-label">请选择市：</label>
+
+                    <div class="layui-input-block ycontrol-Hide">
+                        <p id="city">请选择市</p>
+                        <span class="textbox-addon textbox-addon-right">
+                            <a href="javascript:;" class="textbox-icon combo-arrow" icon-index="0" tabindex="-1"></a>
+                        </span>
+                    </div>
+
+                    <div class="layui-input-block ycontrol-Hide">
+                        <select lay-ignore id="cityLine" lay-filter="city-filter" class="easyui-combotree" style="width: 100%; height: 36px;">
+                        </select>
+                    </div>
+                </div>
+                <div class="layui-form-item sq-message layui-form sq-area-dm" lay-filter="areaFilter" class="myareaClick">
+                    <label class="layui-form-label">请选择区：</label>
+                    <div class="layui-input-block">
+                        <select lay-ignore id="areaLine" class="easyui-combotree" style="width: 100%; height: 36px;">
+                        </select>
+                    </div>
+                </div>
+
+                <div class="layui-form-item sq-message sq-reply-num">
+                    <label class="layui-form-label">申请数量：</label>
+                    <div class="layui-input-block">
+                        <input type="number" lay-verify="isEmpty" name="" value="1" autocomplete="off" class="layui-input appl-num"
+                            readonly>
+                        <button class="minus">-</button>
+                        <button class="plus">+</button>
+                    </div>
+                </div>
+                <!--公司用户显示-->
+                <div class="layui-form-item sq-message layui-form sq-gs-end sq-hide" lay-filter="endFilter">
+                    <label class="layui-form-label">授权截止时间：</label>
+                    <div class="layui-input-block">
+                        <p id="gsEnd">请选择授权截止时间</p>
+                    </div>
+                </div>
+                <!--内部员工显示-->
+                <div class="layui-form-item sq-message layui-form sq-nb-end sq-hide" lay-filter="endFilter">
+                    <label class="layui-form-label">授权截止时间：</label>
+                    <div class="layui-input-block">
+                        <p id="nbEnd">请选择授权截止时间</p>
+                    </div>
+                </div>
+                <!--选择自定义时显示-->
+                <div class="layui-form-item sq-message sq-dead-time sq-hide">
+                    <label class="layui-form-label">截止时间：</label>
+                    <div class="layui-input-block">
+                        <button id='deadline' data-options='{"type":"date","beginYear":2000,"endYear":2086}' class="btn mui-btn mui-btn-block">选择日期</button>
+                        <!--<input type="text" id="deadline" readonly data-options="{'type':'YYYY-MM-DD','beginYear':2010,'endYear':2088}">-->
+                        <!--<input type="text" placeholder="请选择时间">-->
+                    </div>
+                </div>
+
+                <!--甲方用户时显示-->
+                <div class="layui-form-item sq-message sq-first-party sq-business-name sq-hide">
+                    <label class="layui-form-label">商务合同名称：</label>
+                    <div class="layui-input-block">
+                        <input type="text" class="layui-input" placeholder="请输入商务合同名称">
+                    </div>
+                </div>
+                <div class="layui-form-item sq-message sq-first-party sq-business-person sq-hide">
+                    <label class="layui-form-label">商务联系人：</label>
+                    <div class="layui-input-block titleClass">
+                        <!--<input id="businessContact" class="layui-input" type="text" placeholder="请选择商务联系人" readonly>-->
+                        <p id="businessContact">请选择商务联系人</p>
+                    </div>
+
+                    <!--<div class="layui-input-block">
+                        <input type="text" class="layui-input" placeholder="请输入商务联系人">
+                    </div>-->
+                </div>
+                <!--<div class="addjfUser">-->
+                <!--<div class="layui-form-item sq-message sq-jf-ht">-->
+                <!--<label class="layui-form-label">商务合同：</label>-->
+                <!--<div class="layui-input-block">-->
+                <!--<input type="text" id="jfht" class="layui-input" placeholder="请输hhhh入">-->
+                <!--</div>-->
+                <!--</div>-->
+
+                <!--<div class="layui-form-item sq-message sq-jf-use">-->
+                <!--<label class="layui-form-label">商务联系人：</label>-->
+                <!--<div class="layui-input-block">-->
+                <!--<p id="jfUse">请选择</p>-->
+                <!--</div>-->
+                <!--</div>-->
+
+                <!--</div>-->
+                <div class="yCodeDiv">
+                    <div class="layui-form-item sq-message">
+                        <label class="layui-form-label">授权序列码：</label>
+                        <div class="layui-input-block">
+                            <button class="layui-btn sq-get-code" id="myBtn">扫一扫获取序列码</button>
+                        </div>
+                    </div>
+
+                    <div class="layui-form-item sq-message sq-check-con sq-many-line sq-hide">
+                        <label class="layui-form-label">已获取授权码：</label>
+                        <div class="sq-check-main">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sq-refer">
+                <button class="layui-btn layui-btn-normal" lay-submit lay-filter="*">提交申请</button>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script id="selTpl" type="text/html">
+        {{each data v i}}
+        <option value="{{v.dm}}">{{v.mc}}</option>
+        {{/each}}
+    </script>
+
+
+
+</body>
+<script src="/sqxttestwx/sq/lib/layui/layui.js"></script>
+<script src="/sqxttestwx/sq/lib/artTemplate/template-web.js"></script>
+<script src="/sqxttestwx/sq/lib/EasyUI/jquery.min.js"></script>
+<script src="/sqxttestwx/sq/lib/EasyUI/jquery.easyui.min.js"></script>
+<script src="/sqxttestwx/sq/lib/Mdate/iScroll.js"></script>
+<script src="/sqxttestwx/sq/lib/mobileSelect/js/mobileSelect1.js"></script>
+<script src="/sqxttestwx/sq/javascripts/common.js"></script>
+<script src="/sqxttestwx/sq/javascripts/application/applicationMsg.js"></script>
+<script src="/sqxttestwx/sq/javascripts/uuidv1.min.js"></script>
+<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<!--<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>-->
+<script src="/sqxttestwx/sq/lib/timesSelect/js/FJL.min.js"></script>
+<script src="/sqxttestwx/sq/lib/timesSelect/js/FJL.picker.min.js"></script>
+<script>
+    (function ($) {
+        $.init();
+        var result = $('#deadline')[0];
+        var btns = $('.btn');
+        btns.each(function (i, btn) {
+            btn.addEventListener('tap', function () {
+                var optionsJson = this.getAttribute('data-options') || '{}';
+                var options = JSON.parse(optionsJson);
+                var id = this.getAttribute('id');
+                /*
+                 * 首次显示时实例化组件
+                 * 示例为了简洁，将 options 放在了按钮的 dom 上
+                 * 也可以直接通过代码声明 optinos 用于实例化 DtPicker
+                 */
+                var picker = new $.DtPicker(options);
+                picker.show(function (rs) {
+                    /*
+                     * rs.value 拼合后的 value
+                     * rs.text 拼合后的 text
+                     * rs.y 年，可以通过 rs.y.vaue 和 rs.y.text 获取值和文本
+                     * rs.m 月，用法同年
+                     * rs.d 日，用法同年
+                     * rs.h 时，用法同年
+                     * rs.i 分（minutes 的第二个字母），用法同年
+                     */
+                    result.innerText = rs.text;
+                    /*
+                     * 返回 false 可以阻止选择框的关闭
+                     * return false;
+                     */
+                    /*
+                     * 释放组件资源，释放后将将不能再操作组件
+                     * 通常情况下，不需要示放组件，new DtPicker(options) 后，可以一直使用。
+                     * 当前示例，因为内容较多，如不进行资原释放，在某些设备上会较慢。
+                     * 所以每次用完便立即调用 dispose 进行释放，下次用时再创建新实例。
+                     */
+                    picker.dispose();
+                });
+            }, false);
+        });
+    })(mui);
+</script>
+
+</html>

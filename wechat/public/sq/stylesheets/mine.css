@@ -1,0 +1,98 @@
+body{
+    background-color: #f8f8ff;
+}
+a:hover{
+    color: #333;
+}
+.sq-top{
+    position: relative;
+    width: 100%;
+    padding: 40px 0 26px;
+    background-color: #7382f7;
+    color: #fff;
+}
+.sq-top img{
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    border-radius: 100%;
+}
+.sq-top p{
+    line-height: 26px;
+    text-align: center;
+}
+.sq-top .sq-phone{
+    font-size: 20px;
+    margin-top: 20px;
+}
+.sq-top .sq-wechat{
+    font-size: 14px;
+    color: rgba(255,255,255,.5);
+}
+.sq-top .sq-wechat .sq-zt{
+    color: #f6cc00;
+    margin-left: 8px;
+ }
+.sq-top .sq-wechat .wechat-name{
+    margin-right: 8px;
+}
+.sq-top a{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 4px;
+    top: 16px;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+}
+.sq-con ul{
+    padding: 0 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+.sq-con li{
+    border-bottom: 1px solid #eee;
+    position: relative;
+}
+.sq-con li:last-child{
+    border-bottom: none;
+}
+.sq-con a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 17px;
+    line-height: 54px;
+}
+.sq-con i{
+    color: #7382f7;
+}
+.sq-con .fa{
+    margin-right: 10px;
+}
+.sq-con .sq-arrow{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.logout button{
+    display: block;
+    width: 80%;
+    height: 46px;
+    line-height: 46px;
+    font-size: 18px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+/* 弹窗 */
+.popupBg .layui-m-layercont{
+    font-size: 17px;
+}
+.popupBg .layui-m-layerbtn span[yes]{
+    color: #fff;
+    background-color: #7382f7;
+    border-bottom-left-radius: 0;
+}

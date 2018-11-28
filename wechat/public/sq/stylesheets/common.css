@@ -1,0 +1,139 @@
+html, body{
+    background-color: #f8f8ff;
+}
+body{
+    margin-bottom: 76px;
+}
+/*头部标题*/
+h1 {
+    background-color: #7382f7;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+    padding: 10px 0;
+    color: #fff;
+    position: relative;
+}
+h1 a{
+    display: block;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+h1 .back {
+    line-height: 60px;
+    font-size: 28px !important;
+    color: #fff;
+}
+
+/*h1 .add {*/
+    /*display: block;*/
+    /*width: 60px;*/
+    /*height: 60px;*/
+    /*position: absolute;*/
+    /*top: 50%;*/
+    /*right: 0;*/
+    /*transform: translateY(-50%);*/
+    /*line-height: 60px;*/
+    /*font-size: 28px !important;*/
+    /*color: #fff;*/
+/*}*/
+.sq-add{
+    position: fixed;
+    bottom: 76px;
+    right: 10px;
+    width: 56px;
+    height: 56px;
+    border-radius: 100%;
+    background-color: #7382f7;
+    box-shadow: -2px 3px 10px #7382f7;
+    z-index: 100;
+}
+.sq-add .add{
+    display: block;
+    line-height: 56px;
+    font-size: 36px;
+    text-align: center;
+    color: #fff;
+}
+.sq-tab-bar{
+    width: 100%;
+    height: 70px;
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.sq-tab-bar ul{
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid #eee;
+}
+/*普通用户*/
+.sq-user-bar li{
+    float: left;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+/*审核人员*/
+.sq-check-bar li{
+    float: left;
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    /*padding-top: 14px;*/
+    box-sizing: border-box;
+}
+.sq-check-bar li{
+    border-right: 1px solid #eee;
+}
+.sq-check-bar li:last-child{
+    border-right: none;
+}
+
+.sq-user-bar li:first-child{
+    border-right: 1px solid #eee;
+}
+.sq-tab-bar li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #2F4056;
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 14px;
+    box-sizing: border-box;
+}
+.sq-tab-bar li a i{
+    display: block;
+    margin-bottom: 2px;
+    font-size: 22px;
+}
+i.bold{
+    font-weight: 600;
+}
+.sq-tab-bar .active{
+    color: #7382f7;
+}
+.clear:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/*颜色*/
+.sq-check-main .sq-green{
+    color: #5FB878;
+}
+.sq-check-main .sq-red{
+    color: #FF5722;
+}
+.sq-check-main .sq-blue{
+    color: #01AAED;
+}

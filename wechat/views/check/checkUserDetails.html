@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>用户信息审核详情页</title>
+    <link rel='stylesheet' href='/sqxttestwx/sq/lib/layui/css/layui.css' />
+    <link rel='stylesheet' href='/sqxttestwx/sq/stylesheets/common.css' />
+    <link rel='stylesheet' href='/sqxttestwx/sq/stylesheets/check/checkUserDetails.css' />
+</head>
+<body>
+    <!--<h1><a href="/checkUser"><i class="layui-icon back">&#xe603;</i></a>用户信息审核详情页</h1>-->
+    <div class="sq-check-msg">
+
+    </div>
+
+
+<script id="DetailsTpl" type="text/html">
+    {{each data v i}}
+        <div class="sq-box-shadow">
+            <div class="sq-check-con">
+                <span>用户名：</span>
+                <div class="sq-check-main">
+                    <p>{{v['yhm']}}</p>
+                </div>
+            </div>
+            <div class="sq-check-con">
+                <span>行政区代码：</span>
+                <div class="sq-check-main">
+                    <p>{{v['xzqdmMc']}}</p>
+                </div>
+            </div>
+            <div class="sq-check-con">
+                <span>单位名称：</span>
+                <div class="sq-check-main">
+                    <p>{{v['dwmc']}}</p>
+                </div>
+            </div>
+            <div class="sq-check-con">
+                <span>联系电话：</span>
+                <div class="sq-check-main">
+                    <p>{{v['lxdh']}}</p>
+                </div>
+            </div>
+            <div class="sq-check-con">
+                <span>微信号：</span>
+                <div class="sq-check-main">
+                    <p>{{v['wechat']}}</p>
+                </div>
+            </div>
+            <div class="sq-check-con sq-last-con">
+                <span>认证状态：</span>
+                <div class="sq-check-main">
+                    {{if v['rzzt'] == 1}}
+                    <p class="sq-state">待认证</p>
+                    {{else if v['rzzt'] == 2}}
+                    <p class="sq-blue">初审通过</p>
+                    {{else if v['rzzt'] == 3}}
+                    <p class="sq-blue">二审通过</p>
+                    {{else if v['rzzt'] == 4}}
+                    <p class="sq-green">认证成功</p>
+                    {{else if v['rzzt'] == 9}}
+                    <p class="sq-red">认证失败</p>
+                    {{/if}}
+                </div>
+            </div>
+        </div>
+
+        <div class="sq-check-con sq-check-btn">
+            <button id="sq-refuse" class="layui-btn layui-btn-danger">拒绝认证</button>
+            <button id="sq-adopt" class="layui-btn">通过认证</button>
+        </div>
+    {{/each}}
+</script>
+<script src="/sqxttestwx/sq/lib/layui/layui.js"></script>
+<script src="/sqxttestwx/sq/lib/artTemplate/template-web.js"></script>
+<script src="/sqxttestwx/sq/javascripts/common.js"></script>
+<script src="/sqxttestwx/sq/javascripts/check/checkUserDetails.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>用户申请信息列表</title>
+    <link rel='stylesheet' href='/sqxttestwx/sq/lib/layui/css/layui.css' />
+    <link rel='stylesheet' href='/sqxttestwx/sq/stylesheets/common.css' />
+    <link rel='stylesheet' href='/sqxttestwx/sq/stylesheets/check/checkUser.css' />
+</head>
+<body>
+    <h1>用户申请信息列表<i class="layui-icon add">&#xe608;</i></h1>
+    <div class="sq-check-msg">
+        <!--<a href="/userHistoryDetails?id=1">-->
+            <!--<div class="sq-check-con">-->
+                <!--<span>授权类型：</span>-->
+                <!--<div class="sq-check-main">-->
+                    <!--<p class="sq-name">单机授权</p>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="sq-check-con">-->
+                <!--<span>产品名称：</span>-->
+                <!--<div class="sq-check-main">-->
+                    <!--<p class="sq-company">权籍系统</p>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="sq-check-con">-->
+                <!--<span>审核状态：</span>-->
+                <!--<div class="sq-check-main">-->
+                    <!--<p class="sq-state">待审核</p>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<i class="layui-icon">&#xe602;</i>-->
+        <!--</a>-->
+
+
+    </div>
+
+    <!--底部导航-->
+    <div class="sq-tab-bar sq-user-bar">
+        <ul>
+            <li><a class="active" href="javascript:;">申请授权列表</a></li>
+            <li><a href="/sqxttestwx/sq/userApplication">个人中心</a></li>
+        </ul>
+    </div>
+
+
+<script id="userTpl" type="text/html">
+    {{each data v i}}
+    <a href="/sqxttestwx/sq/userHistoryDetails?id={{i}}">
+        <div class="sq-check-con">
+            <span>授权类型：</span>
+            <div class="sq-check-main">
+                <p class="sq-name">{{v['sqlx']}}</p>
+            </div>
+        </div>
+        <div class="sq-check-con">
+            <span>产品名称：</span>
+            <div class="sq-check-main">
+                <p class="sq-company">{{v['cpmc']}}</p>
+            </div>
+        </div>
+        <div class="sq-check-con">
+            <span>审核状态：</span>
+            <div class="sq-check-main">
+                <p class="sq-state">{{v['shzt']}}</p>
+            </div>
+        </div>
+        <i class="layui-icon">&#xe602;</i>
+    </a>
+    {{/each}}
+</script>
+<script src="/sqxttestwx/sq/lib/layui/layui.js"></script>
+<script src="/sqxttestwx/sq/lib/artTemplate/template-web.js"></script>
+<script src="/sqxttestwx/sq/javascripts/common.js"></script>
+<script src="/sqxttestwx/sq/javascripts/application/applicationList.js"></script>
+</body>
+</html>

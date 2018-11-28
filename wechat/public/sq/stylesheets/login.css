@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+/* top */
+.top-img{
+    width: 100%;
+}
+.top-img img{
+    width: 100%;
+    height: auto;
+}
+h1{
+    position: absolute;
+    left: 0;
+    top: 70px;
+    width: 100%;
+    text-align: center;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 44px;
+    color: #fff;
+}
+/* input中placeholder颜色的改变 */
+input::-webkit-input-placeholder{
+    color: #999;
+}
+input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+    color: #999;
+}
+input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+    color: #999;
+}
+input:-ms-input-placeholder{  /* Internet Explorer 10-11 */
+    color: #999;
+}
+/* 去除input默认样式 */
+input,
+select,
+button,
+.layui-input,
+.layui-select,
+.layui-textarea {
+    outline: none;
+    -webkit-appearance: none;
+    border-radius: 0;
+    border-top: none;
+    border-right: none;
+    border-bottom: 1px solid #7382f7;
+    border-left: none;
+}
+.sq-contain{
+    padding-top: 60px;
+}
+.sq-message{
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+.sq-message label{
+    display: inline-block;
+    width: 6%;
+    font-size: 20px;
+    text-align: right;
+    color: #7382f7;
+}
+.sq-message .fa-lock {
+    font-size: 22px;
+}
+.sq-message input,
+.sq-message select{
+    width: 90%;
+    height: 36px;
+    outline: none;
+    box-sizing: border-box;
+}
+.layui-input-block {
+    margin-left: 0;
+    display: inline-block;
+    width: 85%;
+}
+.ver-code {
+    width: 44%;
+    margin-left: 0;
+    position: relative;
+}
+.ver-code input {
+    width: 100%;
+}
+.ver-img {
+    width: 32%;
+    display: inline-block;
+    height: 36px;
+}
+
+/*下拉框*/
+.layui-form-select .layui-edge{
+    right: 30px;
+}
+.layui-form-select dl{
+    left: 0;
+    min-width: 90%;
+}
+.layui-form-select .layui-edge {
+    border-top-color: #7382f7;
+}
+/*按钮居中*/
+.sq-button-center{
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 40px;
+}
+.btn-login {
+    width: 100%;
+    background-color: #7382f7;
+    font-size: 16px;
+    height: 44px;
+    line-height: 44px;
+}
+.btn-code{
+    position: relative;
+    left: 10px;
+    width: 106px;
+    box-sizing: border-box;
+}

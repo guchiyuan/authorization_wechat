@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>授权申请信息详情页</title>
+    <link rel='stylesheet' href='/sqxttestwx/sq/lib/layui/css/layui.css' />
+    <link rel='stylesheet' href='/sqxttestwx/sq/stylesheets/check/checkUserDetails.css' />
+</head>
+<body>
+    <!--<h1><i class="layui-icon back">&#xe603;</i>用户申请信息详情页</h1>-->
+    <div class="sq-check-msg">
+
+
+    </div>
+
+
+<script id="DetailsTpl" type="text/html">
+    {{each data v i}}
+    <div class="sq-box-shadow">
+        <div class="sq-check-con">
+            <span>授权类型：</span>
+            <div class="sq-check-main">
+                {{if v['sqlx'] == 1}}
+                <p>单机授权</p>
+                {{else if v['sqlx'] == 2}}
+                <p>服务器授权</p>
+                {{/if}}
+            </div>
+        </div>
+        {{if v['sqlx'] == 2}}
+        <div class="sq-check-con sqxk-num">
+            <span>授权许可数：</span>
+            <div class="sq-check-main">
+                <p>{{v['sqxks']}}<i class="layui-icon">&#xe60b;</i></p>
+            </div>
+        </div>
+        {{/if}}
+
+        <div class="sq-check-con">
+            <span>产品名称：</span>
+            <div class="sq-check-main">
+                <p>{{v['cpmc']}}</p>
+            </div>
+        </div>
+        <div class="sq-check-con">
+            <span>使用加密狗：</span>
+            <div class="sq-check-main">
+                {{if v['jmg'] == 0}}
+                <p>不使用</p>
+                {{else}}
+                <p>使用</p>
+                {{/if}}
+            </div>
+        </div>
+        <div class="sq-check-con">
+            <span>行政区代码：</span>
+            <div class="sq-check-main">
+                <p>{{v['xzqdmMc']}}</p>
+            </div>
+        </div>
+        <div class="sq-check-con">
+            <span>申请数量：</span>
+            <div class="sq-check-main">
+                <p>{{v['sqsl']}}</p>
+            </div>
+        </div>
+        <div class="sq-check-con">
+            <span>截止时间：</span>
+            <div class="sq-check-main">
+                <p>{{v['jzsj']}}</p>
+            </div>
+        </div>
+        {{if v['swhtmc']}}
+        <div class="sq-check-con sq-ht">
+            <span>商务合同名称：</span>
+            <div class="sq-check-main">
+                <p>{{v['swhtmc']}}</p>
+            </div>
+        </div>
+        {{/if}}
+        {{if v['swlxr']}}
+        <div class="sq-check-con">
+            <span>商务联系人：</span>
+            <div class="sq-check-main">
+                <p>{{v['swlxr']}}</p>
+            </div>
+        </div>
+        {{/if}}
+        <div class="sq-check-con sq-many-line">
+            <span>授权序列码：</span>
+            <div class="sq-check-main">
+
+                <p>{{v['xksList']}}</p>
+
+            </div>
+        </div>
+        <div class="sq-check-con sq-last-con">
+            <span>审核状态：</span>
+            <div class="sq-check-main">
+                <p class="sq-state">{{v['shzt']}}</p>
+            </div>
+        </div>
+    </div>
+    {{if v['shzt'] != '申请已办结' && v['shzt'] != '不予办理' && v['shzt'] != '申请成功'}}
+    <div class="sq-check-con sq-check-btn">
+        <button id="sq-revoke" class="layui-btn">撤销申请</button>
+    </div>
+    {{/if}}
+    {{/each}}
+</script>
+<script src="/sqxttestwx/sq/lib/layui/layui.js"></script>
+<script src="/sqxttestwx/sq/lib/artTemplate/template-web.js"></script>
+<script src="/sqxttestwx/sq/javascripts/common.js"></script>
+<script src="/sqxttestwx/sq/javascripts/application/userHistoryDetails.js"></script>
+</body>
+</html>

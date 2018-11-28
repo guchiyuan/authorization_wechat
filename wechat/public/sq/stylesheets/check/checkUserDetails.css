@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    /*background-color: #eee;*/
+}
+/*标题*/
+h1{
+    background-color: #7382f7;
+    font-size: 18px;
+    text-align: center;
+    line-height: 40px;
+    padding: 10px 0;
+    color: #fff;
+    position: relative;
+}
+h1 .back{
+    position: absolute;
+    top: 50%;
+    left: 14px;
+    transform: translateY(-50%);
+    font-size: 24px;
+}
+
+/*主内容区*/
+.sq-check-msg{
+
+}
+.sq-box-shadow{
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 0 10px;
+    box-shadow: 0 0 10px #b1baff;
+}
+.sq-check-con{
+    position: relative;
+    line-height: 48px;
+    font-size: 16px;
+    border-bottom: 1px solid #eee;
+    box-sizing: border-box;
+}
+.sq-last-con{
+    border-bottom: none;
+}
+.sq-check-con span{
+    position: absolute;
+    top: 0;
+    left: 12px;
+    width: 34%;
+}
+.sq-ht span{
+    width: 36%;
+}
+.sq-check-con .sq-check-main{
+    margin-left: 30%;
+    text-align: right;
+    padding-right: 12px;
+}
+.sq-check-main p{
+    color: #aaa;
+    min-height: 36px;
+}
+.sq-check-main .sq-state{
+    color: #FFB800;
+}
+/*按钮*/
+.sq-check-btn{
+    text-align: center;
+    border-bottom: none;
+    padding-top: 10px;
+}
+.sq-check-btn button{
+    border-radius: 10px;
+    width: 80%;
+    line-height: 46px;
+    height: 46px;
+    font-size: 18px;
+    margin-bottom: 14px;
+}
+.sq-check-con #sq-revoke{
+    background-color: #7382f7;
+}
+
+.layui-btn+.layui-btn{
+    margin-left: 0;
+}
+
+/*拒绝原因*/
+/*.sq-refuse-reason{*/
+    /*height: auto;*/
+/*}*/
+/*.sq-refuse-reason span{*/
+    /*position: relative;*/
+/*}*/
+/*.sq-refuse-reason .sq-check-main{*/
+    /*width: 100%;*/
+    /*margin-left: 0;*/
+/*}*/
+.sq-refuse-reason textarea{
+    width: 90%;
+    height: 100px;
+    margin: 18px 5%;
+    text-indent: 2em;
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border-color: #7382f7;
+}
+
+/*弹出层*/
+.layui-layer{
+    width: 80%;
+    left: 10%;
+}
+
+/*授权许可数 tip*/
+.sqxk-num i{
+color: red;
+    padding-left: 10px;
+}
+
+/*上下两行*/
+.sq-many-line span{
+    width: 100%;
+    position: relative;
+}
+.sq-many-line .sq-check-main{
+    margin-left: 0;
+    /*margin-top: 10px;*/
+    padding-bottom: 14px;
+}
+.sq-many-line .sq-check-main p{
+    text-align: left;
+    padding-left: 15px;
+    line-height: 24px;
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow: hidden;
+    min-height: 24px;
+}
+
+/*通过按钮颜色*/
+#sq-adopt{
+    background-color: #7382f7 ;
+}
+
+/*弹出层 修改*/
+.layui-layer-title,.layui-layer-setwin{
+    display: none;
+}
+.layui-layer-btn{
+    box-sizing: border-box;
+    padding: 0 !important;
+}
+.layui-layer-btn a{
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 50%;
+    box-sizing: border-box;
+    height: 50px !important;
+    font-size: 14px;
+    line-height: 50px !important;
+    text-align: center;
+    background-color: #F2F2F2 !important;
+}
+.layui-layer-btn .layui-layer-btn0{
+    background-color: #7382f7 !important;
+    border-color: #7382f7 !important;
+}
+.layui-layer-content .tip{
+    height: 90px;
+    line-height: 90px;
+    font-size: 18px;
+    text-align: center;
+}
+.layui-layer-content .reason{
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    text-align: center;
+    background-color: #e2e2e2;
+    /*color: #c2c2c2;*/
+}
+
+/*弹框下拉*/
+.sq-refuse-reason .layui-input-block{
+    margin-left: 0;
+    margin-top: 24px;
+}
+.sq-refuse-reason .layui-input{
+    width: 90%;
+    height: 46px;
+    margin-left: 5%;
+    border-color: #7382f7;
+    font-size: 16px;
+}
+.layui-form-selected dl{
+    width: 90%;
+    margin-left: 5%;
+    min-width: auto;
+}
+.layui-form-select .layui-edge{
+    right: 24px;
+}
+.layui-form-select dl dd.layui-this{
+    background-color: #7382f7;
+}

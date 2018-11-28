@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>用户申请信息</title>
+		
+		 
+		<link rel='stylesheet' href='/sqxttestwx/sq/lib/layui/css/layui.css' />
+		<link rel='stylesheet' href='/sqxttestwx/sq/lib/EasyUI/easyui.css' />
+		<link rel='stylesheet' href='/sqxttestwx/sq/lib/mobileSelect/css/public.css' />
+		<link rel='stylesheet' href='/sqxttestwx/sq/lib/mobileSelect/css/mobileSelect.css' />
+		
+		<link rel='stylesheet' href='/sqxttestwx/sq/stylesheets/common.css' />
+		
+		
+  		
+		
+		<link rel='stylesheet' href='/sqxttestwx/sq/stylesheets/application.css' />
+	</head>
+
+	<body>
+		<!--<h1><a href="/sqxttestwx/sq/mine"><i class="layui-icon back">&#xe603;</i></a>用户信息</h1>-->
+		<div class="layui-tab">
+
+		</div>
+
+		<!--新用户模板-->
+		<script id="newUserTpl" type="text/html">
+			<div class="layui-form sq-user sq-first-write">
+				<div class="sq-box-shadow">
+					<div class="layui-form-item sq-message">
+						<label class="layui-form-label">申请人：</label>
+						<div class="layui-input-block">
+							<input type="text" lay-verify="isEmpty" name="" placeholder="请输入" autocomplete="off" class="layui-input sq-apply-name">
+						</div>
+					</div>
+					<div class="layui-form-item sq-message layui-form sq-applicant-type" lay-filter="typeFilter">
+						<label class="layui-form-label">申请人类型：</label>
+						<div class="layui-input-block">
+							<p id="applicantType">请选择项目组</p>
+						</div>
+					</div>
+					<!--选择甲方用户时显示-->
+					<div class="layui-form-item sq-message sq-applicant-company">
+						<label class="layui-form-label">申请人(单位)：</label>
+						<div class="layui-input-block">
+							<input type="text" name="" placeholder="请输入" autocomplete="off" class="layui-input sq-apply-company">
+						</div>
+					</div>
+					<!--选择公司员工测试时显示-->
+					<div class="layui-form-item sq-message sq-team sq-hide layui-form sq-project" lay-filter="proFilter">
+						<label class="layui-form-label">项目组：</label>
+						<div class="layui-input-block">
+							<p id="project">请选择项目组</p>
+						</div>
+						<!--<div class="layui-input-block">-->
+						<!--<select name="interest" lay-filter="project">-->
+						<!--<option value="0">请选择</option>-->
+						<!--&lt;!&ndash;<option value="1">YY组</option>&ndash;&gt;-->
+						<!--</select>-->
+						<!--</div>-->
+					</div>
+					<!--&lt;!&ndash;从登录信息中获取&ndash;&gt;-->
+					<!--<div class="layui-form-item sq-message sq-phone" style="display: none">-->
+					<!--<label class="layui-form-label">联系电话：</label>-->
+					<!--<div class="layui-input-block">-->
+					<!--<input type="tel" lay-verify="phone" name="" placeholder="请输入" autocomplete="off" class="layui-input">-->
+					<!--</div>-->
+					<!--</div>-->
+					<div class="layui-form-item sq-message sq-wechat">
+						<label class="layui-form-label">微信账号：</label>
+						<div class="layui-input-block">
+							<input type="text"  name="" id="Ywechat" placeholder="请输入" autocomplete="off" class="layui-input">
+						</div>
+					</div>
+					<div class="layui-form-item sq-message sq-code">
+						<label class="layui-form-label" for="id_select">行政区代码：</label>
+						<div class="layui-input-block">
+							<input type="text"  name="" id="sqDm" placeholder="请输入"  lay-verify="isNull">
+							<span class="textbox-addon textbox-addon-right">
+                           	 <a href="javascript:;" class="textbox-icon combo-arrow" icon-index="0" tabindex="-1"></a>
+                        	</span>
+							<div class="selectDiv">
+
+							</div>
+							<!--<input type="text" id="sqDm" placeholder="请选择">-->
+
+						</div>
+					</div>
+					<div class="layui-form-item sq-message sq-receive-email">
+						<label class="layui-form-label">授权接收邮箱：</label>
+						<div class="layui-input-block">
+							<input type="email" lay-verify="email" name="" placeholder="请输入" autocomplete="off" class="layui-input">
+						</div>
+					</div>
+				</div>
+
+				<div class="sq-refer">
+					<button class="layui-btn layui-btn-normal" id="new-btn" lay-submit lay-filter="*">提交申请</button>
+				</div>
+			</div>
+		</script>
+
+		<!--下拉框内容填充模板-->
+		<script id="selTpl" type="text/html">
+			{{each data v i}}
+			<option value="{{v.dm}}">{{v.mc}}</option>
+			{{/each}}
+		</script>
+
+	</body>
+	<script src="/sqxttestwx/sq/lib/layui/layui.js"></script>
+	<script src="/sqxttestwx/sq/lib/EasyUI/jquery.min.js"></script>
+	<script src="/sqxttestwx/sq/lib/EasyUI/jquery.easyui.min.js"></script>
+	<script src="/sqxttestwx/sq/lib/artTemplate/template-web.js"></script>
+	<script src="/sqxttestwx/sq/lib/mobileSelect/js/mobileSelect.js"></script>
+	<!--<script src="/sqxttestwx/sq/lib/combo/js/jquery.combo.select.js"></script>-->
+	
+
+	<script src="/sqxttestwx/sq/javascripts/common.js"></script>
+	<script src="/sqxttestwx/sq/javascripts/mine/userMsg.js"></script>
+
+</html>

@@ -1,0 +1,943 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="83f7d42d-8194-4ed8-95e1-1daf45fd14d4" name="默认的" comment="">
+      <change afterPath="$PROJECT_DIR$/wechat/public/javascripts/mine" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wechat/public/javascripts/mine/mine.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wechat/public/javascripts/mine/updateEmail.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wechat/public/javascripts/mine/userMsg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wechat/public/stylesheets/mine.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wechat/views/mine" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/wechat/views/mine.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wechat/views/mine/myApplication.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wechat/views/mine/myApply.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wechat/views/mine/updateEmail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wechat/views/mine/userMsg.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/arr-diff/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/arr-diff/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/arr-flatten/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/arr-flatten/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/arr-union/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/arr-union/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/array-unique/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/array-unique/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/assign-symbols/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/assign-symbols/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/atob/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/atob/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/base/node_modules/define-property/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/base/node_modules/define-property/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/base/node_modules/is-accessor-descriptor/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/base/node_modules/is-accessor-descriptor/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/base/node_modules/is-data-descriptor/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/base/node_modules/is-data-descriptor/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/base/node_modules/is-descriptor/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/base/node_modules/is-descriptor/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/base/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/base/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/braces/node_modules/extend-shallow/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/braces/node_modules/extend-shallow/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/braces/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/braces/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/cache-base/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/cache-base/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/class-utils/node_modules/define-property/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/class-utils/node_modules/define-property/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/class-utils/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/class-utils/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/collection-visit/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/collection-visit/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/component-emitter/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/component-emitter/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/copy-descriptor/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/copy-descriptor/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/decode-uri-component/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/decode-uri-component/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/define-property/node_modules/is-accessor-descriptor/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/define-property/node_modules/is-accessor-descriptor/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/define-property/node_modules/is-data-descriptor/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/define-property/node_modules/is-data-descriptor/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/define-property/node_modules/is-descriptor/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/define-property/node_modules/is-descriptor/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/define-property/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/define-property/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/eventemitter3/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/eventemitter3/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/expand-brackets/node_modules/define-property/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/expand-brackets/node_modules/define-property/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/expand-brackets/node_modules/extend-shallow/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/expand-brackets/node_modules/extend-shallow/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/expand-brackets/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/expand-brackets/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/extend-shallow/node_modules/is-extendable/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/extend-shallow/node_modules/is-extendable/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/extend-shallow/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/extend-shallow/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/extglob/node_modules/define-property/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/extglob/node_modules/define-property/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/extglob/node_modules/extend-shallow/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/extglob/node_modules/extend-shallow/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/extglob/node_modules/is-accessor-descriptor/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/extglob/node_modules/is-accessor-descriptor/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/extglob/node_modules/is-data-descriptor/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/extglob/node_modules/is-data-descriptor/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/extglob/node_modules/is-descriptor/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/extglob/node_modules/is-descriptor/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/extglob/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/extglob/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/fill-range/node_modules/extend-shallow/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/fill-range/node_modules/extend-shallow/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/fill-range/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/fill-range/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/for-in/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/for-in/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/fragment-cache/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/fragment-cache/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/get-value/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/get-value/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/has-value/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/has-value/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/has-values/node_modules/kind-of/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/has-values/node_modules/kind-of/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/has-values/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/has-values/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/http-proxy-middleware/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/http-proxy-middleware/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/http-proxy/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/http-proxy/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/is-accessor-descriptor/node_modules/kind-of/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/is-accessor-descriptor/node_modules/kind-of/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/is-accessor-descriptor/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/is-accessor-descriptor/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/is-buffer/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/is-buffer/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/is-data-descriptor/node_modules/kind-of/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/is-data-descriptor/node_modules/kind-of/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/is-data-descriptor/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/is-data-descriptor/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/is-descriptor/node_modules/kind-of/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/is-descriptor/node_modules/kind-of/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/is-descriptor/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/is-descriptor/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/is-extendable/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/is-extendable/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/is-extglob/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/is-extglob/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/is-glob/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/is-glob/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/is-number/node_modules/kind-of/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/is-number/node_modules/kind-of/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/is-number/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/is-number/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/is-odd/node_modules/is-number/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/is-odd/node_modules/is-number/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/is-odd/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/is-odd/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/is-plain-object/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/is-plain-object/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/is-windows/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/is-windows/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/isobject/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/isobject/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/kind-of/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/kind-of/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/lodash/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/lodash/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/map-cache/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/map-cache/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/map-visit/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/map-visit/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/micromatch/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/micromatch/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/mixin-deep/node_modules/is-extendable/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/mixin-deep/node_modules/is-extendable/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/mixin-deep/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/mixin-deep/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/nanomatch/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/nanomatch/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/object-copy/node_modules/define-property/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/object-copy/node_modules/define-property/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/object-copy/node_modules/kind-of/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/object-copy/node_modules/kind-of/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/object-copy/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/object-copy/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/object-visit/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/object-visit/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/object.pick/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/object.pick/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/pascalcase/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/pascalcase/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/posix-character-classes/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/posix-character-classes/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/regex-not/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/regex-not/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/repeat-element/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/repeat-element/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/repeat-string/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/repeat-string/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/requires-port/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/requires-port/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/resolve-url/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/resolve-url/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/ret/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/ret/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/safe-regex/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/safe-regex/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/set-value/node_modules/extend-shallow/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/set-value/node_modules/extend-shallow/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/set-value/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/set-value/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/snapdragon-node/node_modules/define-property/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/snapdragon-node/node_modules/define-property/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/snapdragon-node/node_modules/is-accessor-descriptor/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/snapdragon-node/node_modules/is-accessor-descriptor/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/snapdragon-node/node_modules/is-data-descriptor/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/snapdragon-node/node_modules/is-data-descriptor/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/snapdragon-node/node_modules/is-descriptor/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/snapdragon-node/node_modules/is-descriptor/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/snapdragon-node/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/snapdragon-node/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/snapdragon-util/node_modules/kind-of/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/snapdragon-util/node_modules/kind-of/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/snapdragon-util/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/snapdragon-util/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/snapdragon/node_modules/define-property/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/snapdragon/node_modules/define-property/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/snapdragon/node_modules/extend-shallow/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/snapdragon/node_modules/extend-shallow/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/snapdragon/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/snapdragon/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/source-map-resolve/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/source-map-resolve/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/source-map-url/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/source-map-url/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/source-map/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/source-map/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/split-string/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/split-string/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/static-extend/node_modules/define-property/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/static-extend/node_modules/define-property/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/static-extend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/static-extend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/to-object-path/node_modules/kind-of/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/to-object-path/node_modules/kind-of/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/to-object-path/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/to-object-path/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/to-regex-range/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/to-regex-range/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/to-regex/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/to-regex/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/union-value/node_modules/extend-shallow/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/union-value/node_modules/extend-shallow/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/union-value/node_modules/set-value/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/union-value/node_modules/set-value/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/union-value/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/union-value/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/unset-value/node_modules/has-value/node_modules/isobject/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/unset-value/node_modules/has-value/node_modules/isobject/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/unset-value/node_modules/has-value/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/unset-value/node_modules/has-value/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/unset-value/node_modules/has-values/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/unset-value/node_modules/has-values/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/unset-value/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/unset-value/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/urix/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/urix/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/node_modules/use/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/node_modules/use/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/public/javascripts/application/applicationList.js" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/public/javascripts/application/applicationList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/public/javascripts/application/applicationMsg.js" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/public/javascripts/application/applicationMsg.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/public/javascripts/application/userApplication.js" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/public/javascripts/application/userApplication.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/public/javascripts/application/userHistoryDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/public/javascripts/application/userHistoryDetails.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/public/javascripts/check/checkUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/public/javascripts/check/checkUser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/public/javascripts/check/checkUserDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/public/javascripts/check/checkUserDetails.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/public/javascripts/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/public/javascripts/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/public/stylesheets/application.css" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/public/stylesheets/application.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/public/stylesheets/check/checkUser.css" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/public/stylesheets/check/checkUser.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/public/stylesheets/check/checkUserDetails.css" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/public/stylesheets/check/checkUserDetails.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/public/stylesheets/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/public/stylesheets/common.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/views/application/applicationMsg.html" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/views/application/applicationMsg.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/views/application/userApplication.html" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/views/application/userApplication.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/views/application/userHistoryDetails.html" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/views/application/userHistoryDetails.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/views/check/checkApplyDetails.html" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/views/check/checkApplyDetails.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/views/check/checkApplyMsg.html" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/views/check/checkApplyMsg.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/views/check/checkUser.html" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/views/check/checkUser.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wechat/views/check/checkUserDetails.html" beforeDir="false" afterPath="$PROJECT_DIR$/wechat/views/check/checkUserDetails.html" afterDir="false" />
+    </list>
+    <ignored path="front.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-2069282044">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="23" />
+          <entry key="project.open.time.0" value="2" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.17" value="3" />
+          <entry key="project.open.time.19" value="2" />
+          <entry key="project.open.time.20" value="3" />
+          <entry key="project.open.time.21" value="2" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.4" value="2" />
+          <entry key="project.open.time.5" value="5" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="24" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="css" value="9" />
+          <entry key="ejs" value="1" />
+          <entry key="html" value="88" />
+          <entry key="js" value="192" />
+          <entry key="json" value="16" />
+          <entry key="www" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="9" />
+          <entry key="EJS" value="1" />
+          <entry key="HTML" value="88" />
+          <entry key="JSON" value="16" />
+          <entry key="JavaScript" value="194" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CSS" value="807" />
+          <entry key="HTML" value="889" />
+          <entry key="JavaScript" value="6513" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="css" value="807" />
+          <entry key="html" value="887" />
+          <entry key="js" value="6515" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.js.language.service.starts" />
+      <usages-collector id="statistics.vcs.git.usages" />
+    </session>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="front" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>openid</find>
+      <find>sq-zt</find>
+      <find>min</find>
+      <find>Yxmddm</find>
+      <find>xksList</find>
+      <find>sq-business-name</find>
+      <find>swhtmc</find>
+      <find>is</find>
+      <find>alert</find>
+      <find>href</find>
+      <find>sqxlmList</find>
+      <find>ff</find>
+      <find>一审</find>
+      <find>一</find>
+      <find>number</find>
+      <find>sq-license-num</find>
+      <find>sqxks</find>
+      <find>li-plus</find>
+      <find>license-num</find>
+      <find>sqxlm</find>
+      <find>xzqdm</find>
+      <find>sqsl</find>
+      <find>myreg</find>
+      <find>sq-message</find>
+      <find>selectDiv</find>
+      <find>ppData</find>
+      <find>ssqy</find>
+      <find>getQData</find>
+      <find>getxzqVal</find>
+      <find>encryptionTrue</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/wechat/bin/www" />
+        <option value="$PROJECT_DIR$/wechat/public/javascripts/check/checkApplyMsg.js" />
+        <option value="$PROJECT_DIR$/wechat/public/javascripts/check/checkApplyDetails.js" />
+        <option value="$PROJECT_DIR$/wechat/public/javascripts/common.js" />
+        <option value="$PROJECT_DIR$/wechat/views/check/oneList.html" />
+        <option value="$PROJECT_DIR$/wechat/views/application/userApplication.html" />
+        <option value="$PROJECT_DIR$/wechat/public/javascripts/application/userApplication.js" />
+        <option value="$PROJECT_DIR$/wechat/views/mine/myApplication.html" />
+        <option value="$PROJECT_DIR$/wechat/views/mine/updateEmail.html" />
+        <option value="$PROJECT_DIR$/wechat/routes/index.js" />
+        <option value="$PROJECT_DIR$/wechat/public/stylesheets/mine.css" />
+        <option value="$PROJECT_DIR$/wechat/public/stylesheets/check/checkUserDetails.css" />
+        <option value="$PROJECT_DIR$/wechat/public/stylesheets/check/checkUser.css" />
+        <option value="$PROJECT_DIR$/wechat/views/check/checkUser.html" />
+        <option value="$PROJECT_DIR$/wechat/public/javascripts/application/userHistoryDetails.js" />
+        <option value="$PROJECT_DIR$/wechat/public/javascripts/login.js" />
+        <option value="$PROJECT_DIR$/wechat/public/stylesheets/application.css" />
+        <option value="$PROJECT_DIR$/wechat/public/javascripts/mine/userMsg.js" />
+        <option value="$PROJECT_DIR$/wechat/public/javascripts/mine/updateEmail.js" />
+        <option value="$PROJECT_DIR$/wechat/views/mine.html" />
+        <option value="$PROJECT_DIR$/wechat/public/javascripts/mine/mine.js" />
+        <option value="$PROJECT_DIR$/wechat/public/javascripts/application/applicationList.js" />
+        <option value="$PROJECT_DIR$/wechat/public/javascripts/application/applicationMsg.js" />
+        <option value="$PROJECT_DIR$/wechat/public/stylesheets/common.css" />
+        <option value="$PROJECT_DIR$/wechat/public/javascripts/check/checkUser.js" />
+        <option value="$PROJECT_DIR$/wechat/views/check/checkUserDetails.html" />
+        <option value="$PROJECT_DIR$/wechat/public/javascripts/check/checkUserDetails.js" />
+        <option value="$PROJECT_DIR$/wechat/views/application/applicationList.html" />
+        <option value="$PROJECT_DIR$/wechat/views/index.html" />
+        <option value="$PROJECT_DIR$/wechat/public/sq/lib/mobileSelect/js/mobileSelect.js" />
+        <option value="$PROJECT_DIR$/wechat/public/sq/javascripts/application/userApplication.js" />
+        <option value="$PROJECT_DIR$/wechat/public/sq/javascripts/login.js" />
+        <option value="$PROJECT_DIR$/wechat/public/sq/lib/mobileSelect/js/mobileSelect3.js" />
+        <option value="$PROJECT_DIR$/wechat/public/sq/lib/mobileSelect/js/mobileSelect1.js" />
+        <option value="$PROJECT_DIR$/wechat/app.js" />
+        <option value="$PROJECT_DIR$/wechat/views/mine/myApply.html" />
+        <option value="$PROJECT_DIR$/wechat/public/sq/javascripts/application/applicationList.js" />
+        <option value="$PROJECT_DIR$/wechat/views/application/userHistoryDetails.html" />
+        <option value="$PROJECT_DIR$/wechat/public/sq/javascripts/check/checkUserDetails.js" />
+        <option value="$PROJECT_DIR$/wechat/public/sq/javascripts/mine/updateEmail.js" />
+        <option value="$PROJECT_DIR$/wechat/public/sq/stylesheets/application.css" />
+        <option value="$PROJECT_DIR$/wechat/views/check/checkApplyMsg.html" />
+        <option value="$PROJECT_DIR$/wechat/public/sq/javascripts/mine/mine.js" />
+        <option value="$PROJECT_DIR$/wechat/public/sq/javascripts/check/checkApplyDetails.js" />
+        <option value="$PROJECT_DIR$/wechat/public/sq/javascripts/application/userHistoryDetails.js" />
+        <option value="$PROJECT_DIR$/wechat/views/check/checkApplyDetails.html" />
+        <option value="$PROJECT_DIR$/wechat/views/application/applicationMsg.html" />
+        <option value="$PROJECT_DIR$/wechat/views/login.html" />
+        <option value="$PROJECT_DIR$/wechat/views/mine/userMsg.html" />
+        <option value="$PROJECT_DIR$/wechat/public/sq/javascripts/mine/userMsg.js" />
+        <option value="$PROJECT_DIR$/wechat/public/sq/javascripts/application/applicationMsg.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
+    <package-json value="$PROJECT_DIR$/wechat/package.json" />
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/wechat/node_modules" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/wechat/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-52" />
+    <option name="y" value="-7" />
+    <option name="width" value="1386" />
+    <option name="height" value="728" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="code" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="code" type="462c0819:PsiDirectoryNode" />
+              <item name="wechat" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="code" type="462c0819:PsiDirectoryNode" />
+              <item name="wechat" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="code" type="462c0819:PsiDirectoryNode" />
+              <item name="wechat" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="sq" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="code" type="462c0819:PsiDirectoryNode" />
+              <item name="wechat" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="sq" type="462c0819:PsiDirectoryNode" />
+              <item name="javascripts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="code" type="462c0819:PsiDirectoryNode" />
+              <item name="wechat" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="sq" type="462c0819:PsiDirectoryNode" />
+              <item name="javascripts" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="code" type="462c0819:PsiDirectoryNode" />
+              <item name="wechat" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="sq" type="462c0819:PsiDirectoryNode" />
+              <item name="javascripts" type="462c0819:PsiDirectoryNode" />
+              <item name="check" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="code" type="462c0819:PsiDirectoryNode" />
+              <item name="wechat" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="sq" type="462c0819:PsiDirectoryNode" />
+              <item name="javascripts" type="462c0819:PsiDirectoryNode" />
+              <item name="mine" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="code" type="462c0819:PsiDirectoryNode" />
+              <item name="wechat" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="code" type="462c0819:PsiDirectoryNode" />
+              <item name="wechat" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="code" type="462c0819:PsiDirectoryNode" />
+              <item name="wechat" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="check" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="code" type="b2602c69:ProjectViewProjectNode" />
+              <item name="code" type="462c0819:PsiDirectoryNode" />
+              <item name="wechat" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="mine" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js-jscs-nodeInterpreter" value="E:\node\node.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\code\wechat\public\sq\lib" />
+      <recent name="E:\code\wechat\public\sq\lib\mobileSelect\js" />
+      <recent name="E:\code\wechat\public\sq\javascripts" />
+      <recent name="F:\front\wechat\views\mine" />
+      <recent name="F:\front\wechat\public\javascripts\mine" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\front\wechat\views\application" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Node.js.www">
+    <configuration name="www" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="www" working-dir="$PROJECT_DIR$/wechat/bin">
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <package-json value="$PROJECT_DIR$/wechat/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/wechat/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Node.js.www" />
+      <item itemvalue="npm.start" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+        <item itemvalue="Node.js.www" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>C:\Users\Administrator\AppData\Roaming\Subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="83f7d42d-8194-4ed8-95e1-1daf45fd14d4" name="默认的" comment="" />
+      <created>1523610380007</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1523610380007</updated>
+      <workItem from="1523610382368" duration="1002000" />
+      <workItem from="1523838897860" duration="21009000" />
+      <workItem from="1523926038278" duration="10472000" />
+      <workItem from="1523947307512" duration="6390000" />
+      <workItem from="1523954355442" duration="3285000" />
+      <workItem from="1524011864931" duration="18405000" />
+      <workItem from="1524098093546" duration="26160000" />
+      <workItem from="1524184806850" duration="1245000" />
+      <workItem from="1536645144977" duration="993000" />
+      <workItem from="1536646940246" duration="240000" />
+      <workItem from="1536647856763" duration="2641000" />
+      <workItem from="1536654924956" duration="12000" />
+      <workItem from="1536720181728" duration="9879000" />
+      <workItem from="1536798251365" duration="6598000" />
+      <workItem from="1536885447042" duration="20566000" />
+      <workItem from="1537144195439" duration="17475000" />
+      <workItem from="1537230134671" duration="2585000" />
+      <workItem from="1537316770271" duration="442000" />
+      <workItem from="1537318018042" duration="17027000" />
+      <workItem from="1537345139051" duration="5127000" />
+      <workItem from="1537403258789" duration="4428000" />
+      <workItem from="1537408253284" duration="15192000" />
+      <workItem from="1537490078317" duration="10857000" />
+      <workItem from="1537834881195" duration="20930000" />
+      <workItem from="1537920644732" duration="24751000" />
+      <workItem from="1538007986975" duration="1636000" />
+      <workItem from="1538009645109" duration="21928000" />
+      <workItem from="1538031847342" duration="87000" />
+      <workItem from="1538031953033" duration="118000" />
+      <workItem from="1538037146646" duration="10973000" />
+      <workItem from="1538094775756" duration="7945000" />
+      <workItem from="1538104184072" duration="14098000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="304496000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7888707" visible="true" weight="0.2157738" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="npm" order="3" sideWeight="0.2111293" side_tool="true" visible="true" weight="0.2157738" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.63011456" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="运行" order="7" weight="0.28802153" />
+      <window_info anchor="bottom" id="版本控制" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32974428" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="调试" order="11" />
+      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2496474" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="调试" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32974428" />
+      <window_info anchor="bottom" id="运行" order="10" weight="0.1372813" />
+      <window_info anchor="bottom" id="版本控制" order="11" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/wechat/public/stylesheets/common.css" />
+    <entry file="file://$PROJECT_DIR$/wechat/public/javascripts/application/applicationMsg.js" />
+    <entry file="file://$PROJECT_DIR$/wechat/public/javascripts/check/checkUserDetails.js" />
+    <entry file="file://$PROJECT_DIR$/wechat/public/javascripts/check/checkUser.js" />
+    <entry file="file://$PROJECT_DIR$/wechat/public/sq/lib/layui/css/layui.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="1" selection-end-column="59574" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat/public/sq/lib/Mdate/iScroll.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-150" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat/public/sq/javascripts/gVerify.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="547">
+          <caret line="139" column="21" lean-forward="true" selection-start-line="139" selection-start-column="21" selection-end-line="139" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat/public/sq/lib/mobileSelect/js/mobileSelect.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat/views/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat/routes/users.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat/views/error.ejs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat/public/sq/javascripts/uuidv1.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat/public/sq/lib/mobileSelect/css/mobileSelect.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-450" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat/views/check/oneList.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3000" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat/views/check/checkUserWeb.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1125" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat/views/check/checkUserDetails.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1935">
+          <caret line="80" column="7" lean-forward="true" selection-start-line="80" selection-start-column="7" selection-end-line="80" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat/views/check/checkUser.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1200">
+          <caret line="24" column="42" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat/public/sq/lib/mobileSelect/js/mobileSelect.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="105" column="15" lean-forward="true" selection-start-line="103" selection-start-column="10" selection-end-line="105" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat/public/sq/lib/mobileSelect/js/mobileSelect1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="222" column="13" selection-start-line="222" selection-start-column="13" selection-end-line="222" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat/db.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="26" lean-forward="true" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat/public/sq/lib/mobileSelect/js/mobileSelect3.js" />
+    <entry file="file://$PROJECT_DIR$/wechat/public/sq/javascripts/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="21" column="24" lean-forward="true" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat/bin/www">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat/views/mine/updateEmail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="111" column="28" selection-start-line="111" selection-start-column="20" selection-end-line="111" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat/public/sq/lib/combo/js/jquery-1.11.3.min.js" />
+    <entry file="file://$PROJECT_DIR$/wechat/public/sq/stylesheets/application.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="623" column="24" lean-forward="true" selection-start-line="623" selection-start-column="24" selection-end-line="623" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat/views/mine.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="18" column="30" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat/views/check/checkApplyMsg.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="72" column="41" selection-start-line="72" selection-start-column="41" selection-end-line="72" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat/views/mine/myApply.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2261">
+          <caret line="114" column="56" selection-start-line="114" selection-start-column="41" selection-end-line="114" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat/public/sq/javascripts/application/applicationList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="110" column="15" selection-start-line="110" selection-start-column="12" selection-end-line="110" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat/public/sq/javascripts/application/userHistoryDetails.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="502">
+          <caret line="67" column="30" lean-forward="true" selection-start-line="67" selection-start-column="30" selection-end-line="67" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat/public/sq/javascripts/mine/mine.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="26" column="46" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat/public/sq/javascripts/check/checkUserDetails.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="502">
+          <caret line="157" column="54" selection-start-line="157" selection-start-column="48" selection-end-line="157" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat/public/sq/javascripts/check/checkUser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="18" column="42" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat/public/sq/javascripts/check/checkApplyMsg.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-33" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat/public/sq/javascripts/check/checkApplyDetails.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="74" column="38" lean-forward="true" selection-start-line="73" selection-start-column="7" selection-end-line="74" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat/public/sq/javascripts/application/userApplication.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat/views/mine/myApplication.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat/views/application/applicationList.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="502">
+          <caret line="76" column="40" selection-start-line="76" selection-start-column="29" selection-end-line="76" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat/views/application/userApplication.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="502">
+          <caret line="118" column="52" selection-start-line="118" selection-start-column="52" selection-end-line="118" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat/views/application/userHistoryDetails.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="502">
+          <caret line="94" column="33" selection-start-line="94" selection-start-column="33" selection-end-line="94" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat/views/check/checkApplyDetails.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1191">
+          <caret line="45" column="43" selection-start-line="45" selection-start-column="39" selection-end-line="45" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat/public/sq/javascripts/mine/updateEmail.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2475">
+          <caret line="138" column="46" selection-start-line="138" selection-start-column="42" selection-end-line="138" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat/views/application/applicationMsg.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="275" column="36" selection-start-line="275" selection-start-column="28" selection-end-line="275" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="11" column="25" lean-forward="true" selection-start-line="17" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat/views/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat/views/mine/userMsg.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="89" selection-start-line="89" selection-end-line="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat/public/sq/javascripts/application/applicationMsg.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="62" column="25" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat/public/sq/javascripts/mine/userMsg.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="346" column="24" selection-start-line="346" selection-start-column="24" selection-end-line="346" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -1,0 +1,669 @@
+﻿*{
+    margin: 0;
+    left: 0;
+}
+body{
+    /*background-color: #f0f0f0;*/
+}
+/*.sq-user{*/
+    /*background-color: #fff;*/
+/*}*/
+.sq-show{
+    display: block;
+}
+.sq-hide{
+    display: none;
+}
+input,
+select,
+button,
+.layui-input,
+.layui-select,
+.layui-textarea {
+    outline: none;
+    -webkit-appearance: none;
+    border-radius: 0;
+    border-width: 0;
+}
+/*导航栏*/
+.layui-tab-content {
+    padding: 0;
+}
+.layui-tab{
+    margin-top: 0;
+}
+.layui-tab-title {
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #fff;
+    height: 46px;
+}
+.layui-tab-title li{
+    width: 50%;
+    box-sizing: border-box;
+    color: #7382f7;
+    line-height: 46px;
+    font-size: 16px;
+}
+.layui-tab-title .layui-this {
+    background-color: #7382f7;
+    color: #fff;
+}
+.layui-tab-title .layui-this:after {
+    border: none;
+}
+.layui-tab-item{
+    background-color: #fff;
+}
+/*用户信息*/
+.layui-input-block{
+    margin-left: 40%;
+    text-align: right;
+    height: 52px;
+}
+.sq-auth-product .layui-input-block{
+    margin-left: 26%;
+}
+.sq-message{
+    font-size: 16px;
+    border-bottom: 1px solid #f0f0f0;
+}
+.layui-form-item {
+    margin-bottom: 0;
+}
+.sq-message label{
+    display: inline-block;
+    width: 40%;
+    text-align: left;
+    padding: 16px 0 16px 8px;
+    box-sizing: border-box;
+}
+.sq-message.sq-auth-product label{
+    width: 26%;
+}
+.sq-message select,
+.sq-message p{
+    width: 96%;
+    height: 52px;
+    outline: none;
+    /*box-sizing: border-box;*/
+    text-align: right;
+    /*line-height: 52px;*/
+    font-size: 16px;
+    /*vertical-align: middle;*/
+    padding-top: 14px;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.sq-message input{
+    width: 96%;
+    height: 52px;
+    outline: none;
+    /*box-sizing: border-box;*/
+    text-align: right;
+    /*line-height: 52px;*/
+    font-size: 16px;
+    /*vertical-align: middle;*/
+    padding-top: 0;
+}
+
+/*下拉框按钮*/
+.layui-form-select .layui-edge{
+    left: 92%;
+}
+/*下拉框 option*/
+.layui-form-select dl{
+    min-width: 90%;
+    right: 4px;
+}
+
+.sq-message .layui-btn{
+    text-align: right;
+    padding-right: 11px;
+    border-left: 1px solid #f0f0f0;
+}
+.sq-message #myBtn{
+    color: #333;
+    text-align: right;
+    padding-right: 11px;
+    border-left: 1px solid #f0f0f0;
+}
+.addjfUser{
+    display: none;
+}
+/*加密狗 单选框样式*/
+.sq-encryption .layui-input-block label{
+    width: 12%;
+    float: left;
+    line-height: 36px;
+}
+.sq-encryption input{
+    width: 6%;
+    margin-left: 6px;
+    float: left;
+    margin-right: 26px;
+}
+
+/*提交申请*/
+.sq-refer{
+    text-align: center;
+    padding-top: 20px;
+    background-color: transparent;
+}
+.sq-refer button{
+    border-radius: 10px;
+    width: 80%;
+    background-color: #7382f7;
+    line-height: 46px;
+    height: 46px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+/* 下拉框 */
+.layui-form-select dl dd.layui-this {
+    background-color: #7382f7;
+}
+.layui-form-select .layui-input {
+    padding-right: 16px;
+}
+
+/* 单选框 */
+.layui-form-radio {
+     margin-top: 12px;
+}
+.layui-form-radio>i:hover, .layui-form-radioed>i {
+    color: #7382f7;
+}
+.sq-get-code {
+    background-color: transparent;
+    color: #333;
+    line-height: 52px;
+    height: 52px;
+    font-size: 16px;
+}
+.layui-btn:hover {
+    color: rgba(51,51,51,0.4);
+}
+
+
+.ycontrol-Hide{
+	display: none;
+}
+/*多选下拉框*/
+.textbox{
+    width: 100% !important;
+    top: -57px;
+    height: 50px !important;
+    box-sizing: border-box;
+    left: 0;
+    /*border-color: #ccc;*/
+    border: none;
+    outline: none;
+    border-radius: 0 !important;
+}
+.combo-arrow{
+    height: 52px !important;
+}
+.textbox-focused{
+    box-shadow: 0 0 0;
+}
+.textbox-addon{
+    left: 90%;
+}
+.combo-panel{
+    /*height: auto !important;*/
+    width: 100% !important;
+}
+.sq-message input, .sq-message select{
+    height: 52px !important;
+}
+.tree-node{
+    height: 24px;
+}
+.tree-title{
+    font-size: 14px;
+    height: 24px;
+    line-height: 24px;
+}
+.sq-district-dm input,
+.sq-district-dm select{
+    height: 52px !important;
+}
+
+/*上间距*/
+.sq-box-shadow{
+    margin: 10px;
+    box-shadow: 0 0 10px #9BA6FC;
+    background-color: #fff;
+}
+
+/* 授权申请数量 */
+.sq-message .appl-num {
+    width: 82%;
+}
+.plus, .minus,.li-plus, .li-minus {
+    font-size: 28px;
+    position: absolute;
+    width: 10%;
+    top: 0;
+    line-height: 50px;
+    font-weight: 100;
+    color: #666;
+    background-color: transparent;
+}
+.plus,.li-plus {
+    left: 72%;
+}
+.minus,.li-minus {
+    left: 49%;
+    font-size: 40px;
+    line-height: 46px;
+}
+
+.sq-reply-num .plus{
+    left: 85%;
+}
+.sq-reply-num .minus{
+    left: 62%;
+}
+
+/*认证颜色*/
+.sq-receive-email .sq-state{
+    color: #FFB800;
+}
+.sq-receive-email .sq-red{
+    color: #FF5722;
+}
+.sq-receive-email .sq-green{
+    color: #5FB878;
+}
+
+/*授权许可数*/
+.license-num{
+    padding-right: 62px;
+}
+.sq-license-num .tips {
+    width: 20px;
+    height: 20px;
+    color: red;
+    padding-left: 10px;
+    position: absolute;
+    top: 18px;
+    left: 84%;
+}
+.layui-layer-title{
+    padding-left: 30px!important;
+}
+
+/*多选框箭头*/
+.combo-arrow{
+    background-color: transparent;
+    background-position: -2px 18px;
+}
+.combo-arrow:hover{
+    background-color: transparent;
+}
+.sq-rotate{
+    transform: rotate(180deg);
+}
+
+/*单选按钮*/
+.layui-form-radio>i{
+    font-size: 16px;
+}
+.layui-form-radio *{
+    font-size: 16px;
+}
+/*.sq-end-time label{*/
+    /*width: 32%;*/
+/*}*/
+/*.sq-end-time .layui-input-block{*/
+    /*margin-left: 32%;*/
+/*}*/
+.layui-form-radio{
+    margin-right: 0;
+}
+
+/*多选下拉框*/
+.textbox .textbox-text{
+    font-size: 17px;
+    width: 100% !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
+    padding-right: 22px;
+}
+
+/*上下两行*/
+.sq-many-line{
+    padding-bottom: 10px;
+}
+.sq-many-line label{
+    padding: 16px 0 6px 15px;
+}
+.sq-many-line .sq-check-main{
+    margin-left: 0;
+    /*margin-top: 10px;*/
+}
+.sq-many-line p{
+    text-align: left;
+    padding-left: 15px;
+    height: 24px;
+    line-height: 24px;
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow: hidden;
+    color: #aaa;
+    padding-top: 0;
+}
+
+/*弹出层 修改*/
+.layui-layer-title,.layui-layer-setwin{
+    display: none;
+}
+.layui-layer-btn{
+    box-sizing: border-box;
+    padding: 0 !important;
+}
+.layui-layer-btn a{
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100%;
+    box-sizing: border-box;
+    height: 50px !important;
+    font-size: 14px;
+    line-height: 50px !important;
+    text-align: center;
+    background-color: #F2F2F2 !important;
+}
+.layui-layer-btn .layui-layer-btn0{
+    background-color: #7382f7 !important;
+    border-color: #7382f7 !important;
+}
+
+/*信息只展示*/
+.sq-update p{
+    color: #aaa;
+}
+
+/*日期弹窗*/
+.sq-dead-time #deadline{
+    padding-right: 15px;
+}
+
+/*多选框*/
+.tree li{
+    width: 100%;
+    display: block;
+    height: 52px;
+    line-height: 52px;
+    font-size: 16px;
+    border-bottom: 1px solid #ccc;
+}
+.tree-node{
+height: 52px;
+line-height: 52px;
+position: relative;
+padding-left: 30px;
+}
+.tree-node span{
+    display: inline-block;
+    font-size: 16px;
+    height: 100%;
+    line-height: 52px;
+}
+.tree-collapsed, .tree-checkbox{
+height: 20px !important;
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+left: 10px;
+}
+
+/*确认弹窗*/
+.layui-layer{
+    width: 80%;
+    left: 10%;
+}
+.layui-layer-title,.layui-layer-setwin{
+    display: none;
+}
+.layui-layer-btn{
+    box-sizing: border-box;
+    padding: 0 !important;
+}
+.layui-layer-btn a{
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 50%;
+    box-sizing: border-box;
+    height: 50px !important;
+    font-size: 14px;
+    line-height: 50px !important;
+    text-align: center;
+    background-color: #F2F2F2 !important;
+}
+.layui-layer-btn .layui-layer-btn0{
+    background-color: #7382f7 !important;
+    border-color: #7382f7 !important;
+}
+.layui-layer-content .tip{
+    height: 90px;
+    line-height: 90px;
+    font-size: 18px;
+    text-align: center;
+}
+/* 下拉选择 */
+.bootstrap-select.btn-group .btn .filter-option{
+    font-size: 16px;
+    text-align: right!important;
+    position: absolute;
+    right: 18px;
+}
+.btn-group.open .dropdown-toggle{
+    box-shadow: none;
+}
+.btn-default{
+   border-color: transparent;
+    background-color: transparent!important;
+}
+button.selectpicker{
+    text-align: right;
+}
+.caret{
+    display: none;
+}
+button.btn{
+    padding: 16px 8px 16px 0;
+}
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default{
+    border-color: transparent;
+    background-color: #fff;
+}
+.sq-code label{
+    z-index: 200;
+}
+/*.sq-code .layui-input-block{*/
+    /*width: 100%;*/
+    /*position: absolute;*/
+    /*margin-left: 0;*/
+/*}*/
+
+.sq-code .ychange-input-block{
+	margin-left: 40%;
+	width: auto;
+	position: static;
+	
+}
+.btn-group{
+    width: 100%!important;
+}
+.layui-input, .layui-select, .layui-textarea{
+    background-color: transparent;
+}
+.layui-unselect.layui-form-select{
+    display: none!important;
+}
+.dropdown-menu{
+    border: none;
+    box-shadow: none;
+}
+.dropdown-menu li{
+    display: block;
+}
+.dropdown-menu>li>a{
+    text-align: center;
+}
+.dropdown-menu>li>a span{
+    font-size: 16px;
+    line-height: 40px;
+}
+.sq-code .dropdown-menu input, .sq-code select{
+    height: 32px!important;
+    padding: 6px 16px;
+    background-color: #f5f5f5;
+    outline: none;
+    border: none;
+}
+.sq-code .dropdown-menu input{
+    text-align: center;
+}
+.sq-code input.form-control{
+    width: 100%;
+    box-sizing: border-box;
+}
+.bootstrap-select-searchbox{
+    padding: 20px;
+    text-align: center;
+}
+.bootstrap-select.btn-group .dropdown-menu{
+    box-shadow: 0 -1px 3px #7382f7;
+    border-radius: 0;
+}
+body{
+    margin-bottom: 0;
+}
+.dropdown-menu li.active{
+    background-color: #7382f7;
+}
+.dropdown-menu li a{
+    padding-left: 0;
+    padding-right: 0;
+    width: 80%;
+    margin: 0 auto;
+    border-top: 1px solid #f5f5f5;
+    border-bottom: 1px solid #f5f5f5;
+}
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:hover, .dropdown-menu>.active>a:focus{
+    background-color: #7382f7;
+    border: none;
+}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus{
+    background-color: transparent;
+}
+.sq-update.sq-code .layui-form-block>input{
+    padding-top: 16px!important;
+}
+
+.my-skin .layui-layer-btn{
+	width: 100%;
+    position: absolute;
+    bottom:0;
+}
+
+.yLayer h3{
+	color: #000;
+	font-size: 18px;
+}
+.yLayer p{
+	color: #000;
+	font-size: 14px;
+}
+.encryption-dog{
+	display: none;
+}
+#recipients +.layui-unselect.layui-form-select,
+#invoice-info +.layui-unselect.layui-form-select{
+    display: block !important;
+}
+.textbox-addon {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+.textbox-addon .combo-arrow{
+    width: 18px;
+}
+.sq-message p#provence,.sq-message p#city,.sq-message p#recipients,.sq-message p#invoiceInfo{
+    width: 90%;
+}
+.selectDiv{
+    position: absolute;
+    top: 52px;
+    right: 0;
+    width: 100%;
+    display: none;
+
+    z-index: 9999;
+
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    padding: 5px 0;
+
+    border: 1px solid #d2d2d2;
+    max-height: 150px;
+    overflow-y: auto;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.12);
+
+}
+.selectDiv .yoption{
+    padding: 0;
+    padding-right: 20px;
+    cursor: pointer;
+    width: 100%;
+    /*height: 36px;*/
+    color: #333;
+    font-size: 14px;
+
+   height: 36px;
+    line-height: 36px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.selectDiv .yoption:hover{
+    background-color: #ccc;
+}
+#sqDm{
+    width: 90%;
+    margin-right: 16px;
+}
+.date_grid>div{
+    text-align: right;
+}
+.date_dd+.date_grid>div{
+    text-align: left;
+}
+.mui-btn{
+    border-radius: 3px;
+    cursor: pointer;
+}
+.mui-btn-blue{
+    background-color: #7382f7;
+}
+button#deadline{
+    width: 100%;
+    text-align: right;
+    font-size: 16px;
+    background-color: transparent;
+}
+
+.ysqcode{
+    position: relative;
+}
+.ypositionD{
+    position: relative !important;
+}

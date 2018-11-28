@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>用户信息审核</title>
+    <link rel='stylesheet' href='/sqxttestwx/sq/lib/layui/css/layui.css' />
+    <link rel='stylesheet' href='/sqxttestwx/sq/lib/font-awesome/css/font-awesome.min.css' />
+    <link rel="stylesheet" href="/sqxttestwx/sq/lib/iconFont/css/iconfont.css" />
+    <link rel='stylesheet' href='/sqxttestwx/sq/stylesheets/common.css' />
+    <link rel='stylesheet' href='/sqxttestwx/sq/stylesheets/check/checkUser.css' />
+</head>
+<body>
+    <!--<h1>用户信息审核</h1>-->
+    <!--搜索框开始-->
+    <div class="sq-search">
+        <input class="sq-search-text" type="text" placeholder="请输入用户名快速搜索">
+        <button id="sq-search-btn">查询</button>
+    </div>
+    <!--搜索框结束-->
+    <!--全部-->
+    <div class="sq-check-msg">
+        <div class="sq-user sq-hide">
+            <img src="/sqxttestwx/sq/images/bgImage.png" alt="">
+            <p>您不是审核人员，不能查看审核信息</p>
+        </div>
+    </div>
+
+    <!--底部导航-->
+    <div class="sq-tab-bar sq-check-bar">
+        <ul>
+            <li><a href="/sqxttestwx/sq/myApply"><i class="iconfont icon-icon-test bold"></i>申请</a></li>
+            <li><a class="active" href="javascript:;"><i class="iconfont icon-icon bold"></i>用户审核</a></li>
+            <li><a href="/sqxttestwx/sq/checkApplyMsg"><i class="iconfont icon-shenhe bold"></i>授权审核</a></li>
+            <li><a href="/sqxttestwx/sq/mine"><i class="iconfont icon-wode"></i>我的</a></li>
+        </ul>
+    </div>
+
+
+<script id="userTpl" type="text/html">
+    {{each data v i}}
+    <a href="/sqxttestwx/sq/checkUserDetails?id={{v['index']}}">
+        <div class="sq-check-img">
+            <!--<i class="fa fa-windows" aria-hidden="true"></i>-->
+            <i class="fa fa-user" aria-hidden="true"></i>
+        </div>
+        <div class="sq-check">
+            <div class="sq-check-con clear">
+                <div class="sq-check-type">
+                    <span>用户名：</span>
+                    <div class="sq-check-main">
+                        <p class="sq-name">{{v['yhm']}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sq-check-con clear">
+                <span>单位名称：</span>
+                <div class="sq-check-main">
+                    <p class="sq-company">{{v['dwmc']}}</p>
+                </div>
+            </div>
+            <div class="sq-check-con clear">
+                <span>认证状态：</span>
+                <div class="sq-check-main">
+                    {{if v['rzzt'] == 1}}
+                    <p class="sq-state">待认证</p>
+                    {{else if v['rzzt'] == 2}}
+                    <p class="sq-blue">初审通过</p>
+                    {{else if v['rzzt'] == 3}}
+                    <p class="sq-blue">二审通过</p>
+                    {{else if v['rzzt'] == 4}}
+                    <p class="sq-green">认证成功</p>
+                    {{else if v['rzzt'] == 9}}
+                    <p class="sq-red">认证失败</p>
+                    {{/if}}
+                </div>
+            </div>
+        </div>
+        <div class="sq-check-icon">
+            <i class="layui-icon">&#xe602;</i>
+        </div>
+    </a>
+    {{/each}}
+</script>
+</body>
+<script src="/sqxttestwx/sq/lib/layui/layui.js"></script>
+<script src="/sqxttestwx/sq/lib/artTemplate/template-web.js"></script>
+<script src="/sqxttestwx/sq/javascripts/common.js"></script>
+<script src="/sqxttestwx/sq/javascripts/check/checkUser.js"></script>
+</html>

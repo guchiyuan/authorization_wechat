@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>个人中心</title>
+    <link rel='stylesheet' href='/sqxttestwx/sq/lib/layui/css/layui.css' />
+    <link rel='stylesheet' href='/sqxttestwx/sq/lib/font-awesome/css/font-awesome.min.css' />
+    <link rel="stylesheet" href="/sqxttestwx/sq/lib/iconFont/css/iconfont.css" />
+    <link rel='stylesheet' href='/sqxttestwx/sq/stylesheets/common.css' />
+    <link rel='stylesheet' href='/sqxttestwx/sq/stylesheets/mine.css' />
+</head>
+<body>
+    <div class="sq-top">
+        <img src="/sqxttestwx/sq/images/user.jpg" alt="">
+        <p class="sq-phone"></p>
+        <p class="sq-wechat">
+            <span class="sq-zt">须认证身份</span>
+        </p>
+        <!--<a href="javascript:;"><i class="fa fa-cog" aria-hidden="true"></i></a>-->
+    </div>
+
+    <div class="sq-con">
+        <ul>
+            <li>
+                <a href="/sqxttestwx/sq/myApply"><i class="fa fa-star-o" aria-hidden="true"></i>我的申请<i class="layui-icon sq-arrow">&#xe602;</i></a>
+            </li>
+            <li>
+                <a href="/sqxttestwx/sq/checkApplyMsg"><i class="fa fa-star-o" aria-hidden="true"></i>我的审核<i class="layui-icon sq-arrow">&#xe602;</i></a>
+            </li>
+            <li>
+                <a href="javascript:;" id="myMsg"><i class="fa fa-star-o" aria-hidden="true"></i>我的信息<i class="layui-icon sq-arrow">&#xe602;</i></a>
+            </li>
+        </ul>
+        <!--<ul>-->
+            <!--<li>-->
+                <!--<a href="javascript:;"><i class="fa fa-star-o" aria-hidden="true"></i>设置<i class="layui-icon sq-arrow">&#xe602;</i></a>-->
+            <!--</li>-->
+        <!--</ul>-->
+        <div class="logout">
+            <button id="loginOut" class="layui-btn layui-btn-danger">退出登录</button>
+        </div>
+
+        <!--<ul>-->
+            <!--<li>-->
+                <!--<a href="/updateEmail"><i class="fa fa-envelope-o" aria-hidden="true"></i>修改邮箱<i class="layui-icon sq-arrow">&#xe602;</i></a>-->
+            <!--</li>-->
+        <!--</ul>-->
+    </div>
+    
+    <!--底部导航-->
+    <div class="sq-tab-bar sq-check-bar">
+        <ul>
+            <li><a href="/sqxttestwx/sq/myApply"><i class="iconfont icon-icon-test bold"></i>申请</a></li>
+            <li><a href="/sqxttestwx/sq/checkUser"><i class="iconfont icon-icon bold"></i>用户审核</a></li>
+            <li><a href="/sqxttestwx/sq/checkApplyMsg"><i class="iconfont icon-shenhe bold"></i>授权审核</a></li>
+            <li><a class="active" href="javascript:;"><i class="iconfont icon-wode"></i>我的</a></li>
+        </ul>
+    </div>
+
+
+
+</body>
+<script src="/sqxttestwx/sq/lib/layer/layer.js"></script>
+<script src="/sqxttestwx/sq/lib/EasyUI/jquery.min.js"></script>
+<script src="/sqxttestwx/sq/lib/EasyUI/jquery.easyui.min.js"></script>
+<script src="/sqxttestwx/sq/lib/artTemplate/template-web.js"></script>
+<script src="/sqxttestwx/sq/javascripts/common.js"></script>
+<script src="/sqxttestwx/sq/javascripts/mine/mine.js"></script>
+</html>

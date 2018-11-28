@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    /*background-color: #eee;*/
+}
+.sq-hide{
+    display: none;
+}
+
+/*搜索栏*/
+.sq-search{
+    height: 46px;
+    position: relative;
+    width: 90%;
+    margin-top: 10px;
+    margin-left: 5%;
+}
+.sq-search input{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+.sq-search button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 58px;
+    height: 100%;
+    border-radius: 0 5px 5px 0;
+    border: none;
+    color: #fff;
+    background-color: #7382f7;
+}
+.sq-search-tips{
+    line-height: 38px;
+}
+
+
+/*标题*/
+.layui-tab-title {
+    width: 100%;
+    margin-bottom: 0;
+    background-color: #fff;
+    height: 56px;
+}
+.layui-tab-title li{
+    width: 50%;
+    box-sizing: border-box;
+    color: #7382f7;
+    line-height: 56px;
+    font-size: 16px;
+}
+.layui-tab-title .layui-this{
+    border-bottom: 1px solid #7382f7;
+    color: #7382f7;
+}
+.layui-tab-title .layui-this a{
+    color: #fff;
+}
+.layui-tab-title .layui-this:after {
+    border: none;
+}
+.layui-tab-item{
+    background-color: #fff;
+}
+
+/*主内容区*/
+.sq-check-msg>a{
+    height: 122px;
+}
+.sq-check-img{
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 64px;
+    height: 64px;
+    background-color: #01aaed;
+    border-radius: 10px;
+}
+.sq-check-img>i.fa{
+    width: 64px;
+    padding-left: 0;
+    font-size: 36px;
+    line-height: 64px;
+    text-align: center;
+    display: block !important;
+    color: #fff;
+}
+.sq-check{
+    position: absolute;
+    top: 8px;
+    left: 82px;
+    width: 66%;
+    padding-left: 4px;
+    padding-top: 6px;
+}
+.sq-check-con:first-child{
+    height: 40px;
+}
+.sq-check-type .sq-name{
+    font-size: 19px;
+    color: #333;
+    line-height: 40px;
+}
+.sq-check-type span{
+    font-size: 19px;
+    color: #333;
+    line-height: 40px;
+}
+.sq-check-con{
+    position: relative;
+    height: 24px;
+    line-height: 24px;
+    font-size: 16px;
+    color: #888;
+}
+.sq-check-con span{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.sq-check-con .sq-check-main{
+    width: 67%;
+    display: inline-block;
+    float: right;
+}
+.sq-check-main p{
+    color: #aaa;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.sq-check-main .sq-state{
+    color: #FFB800;
+}
+.layui-tab-content{
+    padding: 0;
+}
+.sq-check-msg{
+    overflow: hidden;
+    margin: 0 10px 10px 10px;
+}
+.sq-check-msg a{
+    display: block;
+    position: relative;
+    margin: 12px 0;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #BDD3C3;
+}
+.sq-check-msg a .sq-check-icon{
+    position: absolute;
+    top: 50%;
+    right: -114px;
+    transform: translateY(-50%);
+    width: 142px;
+    height: 148px;
+    border-radius: 100%;
+    background-color: #fff;
+    box-shadow: -2px 0 6px #b1baff;
+}
+.sq-check-msg a i{
+    color: #7382f7;
+    font-size: 30px;
+    line-height: 148px;
+    padding-left: 4px;
+}
+
+/*滑动导航*/
+.layui-tab{
+    margin: 0;
+}
+.layui-tab[overflow]>.sq-scroll-title{
+    overflow: scroll;
+}
+.sq-scroll-title li{
+    width: 25%;
+    box-sizing: border-box;
+    color: #888;
+    line-height: 56px;
+    font-size: 18px;
+}
+.layui-tab-bar{
+    display: none;
+}
+.layui-tab-title li{
+    padding: 0;
+}
+.layui-tab-item{
+    background-color: transparent;
+}
+
+/*加载*/
+.loader{
+    padding: 10px;
+    text-align: center;
+}
+.loader span{
+    display: inline-block;
+    animation: sq-rotate 1s infinite;
+}
+@keyframes sq-rotate
+{
+    0% {transform: rotate(0deg);}
+    50% {transform: rotate(180deg);}
+    100% {transform: rotate(360deg);}
+}
+
+.sq-user{
+    position: relative;
+}
+.sq-user img{
+    width: 100%;
+    height: 100%;
+    margin-top: 36px;
+}
+.sq-user p{
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+    color: #ccc;
+    position: absolute;
+    bottom: 52px;
+    left: 0;
+}

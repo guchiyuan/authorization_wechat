@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>申请信息审核详情页</title>
+    <link rel='stylesheet' href='/sqxttestwx/sq/lib/layui/css/layui.css' />
+    <link rel='stylesheet' href='/sqxttestwx/sq/stylesheets/common.css' />
+    <link rel='stylesheet' href='/sqxttestwx/sq/stylesheets/check/checkUserDetails.css' />
+</head>
+<body>
+    <!--<h1><a href="/checkApplyMsg"><i class="layui-icon back">&#xe603;</i></a>申请信息审核详情页</h1>-->
+    <div class="sq-check-msg">
+
+    </div>
+
+
+<script id="DetailsTpl" type="text/html">
+    {{each data v i}}
+        <div class="sq-box-shadow">
+            <div class="sq-check-con">
+                <span>用户名：</span>
+                <div class="sq-check-main">
+                    <p>{{v['yhm']}}</p>
+                </div>
+            </div>
+            <div class="sq-check-con">
+                <span>单位名称：</span>
+                <div class="sq-check-main">
+                    <p>{{v['dwmc']}}</p>
+                </div>
+            </div>
+            <div class="sq-check-con">
+                <span>办理状态：</span>
+                <div class="sq-check-main">
+                    {{if v['blzt'] == 1}}
+                    <p class="sq-state">待认证</p>
+                    {{else if v['blzt'] == 2}}
+                    <p class="sq-state">待审核</p>
+                    {{else if v['blzt'] == 3}}
+                    <p class="sq-blue">初审通过</p>
+                    {{else if v['blzt'] == 4}}
+                    <p class="sq-blue">二审通过</p>
+                    {{else if v['blzt'] == 5}}
+                    <p class="sq-blue">审核通过</p>
+                    {{else if v['blzt'] == 6}}
+                    <p class="sq-red">在线授权失败</p>
+                    {{else if v['blzt'] == 7}}
+                    <p class="sq-green">在线授权成功</p>
+                    {{else if v['blzt'] == 8}}
+                    <p class="sq-green">审核完成</p>
+                    {{else if v['blzt'] == 9}}
+                    <p class="sq-red">不予办理</p>
+                    {{/if}}
+                </div>
+            </div>
+            <div class="sq-check-con">
+                <span>授权类型：</span>
+                <div class="sq-check-main">
+                    {{if v['sqlx'] == 1}}
+                    <p>单机授权</p>
+                    {{else if v['sqlx'] == 2}}
+                    <p>服务器授权</p>
+                    {{/if}}
+                </div>
+            </div>
+            {{if v['sqlx'] == 2}}
+            <div class="sq-check-con sqxk-num">
+                <span>授权许可数：</span>
+                <div class="sq-check-main">
+                    <p>{{v['sqxks']}}<i class="layui-icon">&#xe60b;</i></p>
+                </div>
+            </div>
+            {{/if}}
+            <div class="sq-check-con">
+                <span>软件名称：</span>
+                <div class="sq-check-main">
+                    <p>{{v['cpmc']}}</p>
+                </div>
+            </div>
+            <div class="sq-check-con">
+                <span>使用加密狗：</span>
+                <div class="sq-check-main">
+                    {{if v['jmg'] == 0}}
+                    <p>不使用</p>
+                    {{else}}
+                    <p>使用</p>
+                    {{/if}}
+                </div>
+            </div>
+            <div class="sq-check-con">
+                <span>申请数量：</span>
+                <div class="sq-check-main">
+                    <p>{{v['sqsl']}}</p>
+                </div>
+            </div>
+            <div class="sq-check-con">
+                <span>截止时间：</span>
+                <div class="sq-check-main">
+                    <p>{{v['jzsj']}}</p>
+                </div>
+            </div>
+            {{if v['swhtmc']}}
+            <div class="sq-check-con">
+                <span>商务合同名称：</span>
+                <div class="sq-check-main">
+                    <p>{{v['swhtmc']}}</p>
+                </div>
+            </div>
+            {{/if}}
+            {{if v['swlxr']}}
+            <div class="sq-check-con">
+                <span>商务联系人：</span>
+                <div class="sq-check-main">
+                    <p>{{v['swlxr']}}</p>
+                </div>
+            </div>
+            {{/if}}
+            <div class="sq-check-con">
+                <span>行政区代码：</span>
+                <div class="sq-check-main">
+                    <p>{{v['xzqdmMc']}}</p>
+                </div>
+            </div>
+            <div class="sq-check-con">
+                <span>联系电话：</span>
+                <div class="sq-check-main">
+                    <p>{{v['lxdh']}}</p>
+                </div>
+            </div>
+            <!--上下两行-->
+            <div class="sq-check-con sq-last-con sq-many-line">
+                <span>授权序列码：</span>
+                <div class="sq-check-main">
+                    {{each v['xksList'] v i}}
+                    <p>{{v}}</p>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+        <div class="sq-check-con sq-check-btn">
+            <button id="sq-refuse" class="layui-btn layui-btn-danger">拒绝申请</button>
+            <button id="sq-adopt" class="layui-btn">通过申请</button>
+        </div>
+    {{/each}}
+</script>
+<script src="/sqxttestwx/sq/lib/layui/layui.js"></script>
+<script src="/sqxttestwx/sq/lib/artTemplate/template-web.js"></script>
+<script src="/sqxttestwx/sq/javascripts/common.js"></script>
+<script src="/sqxttestwx/sq/javascripts/check/checkApplyDetails.js"></script>
+</body>
+</html>
